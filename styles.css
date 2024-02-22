@@ -1,0 +1,193 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background: white;
+  color: #1b1b32;
+  font-family: Helvetica;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+#header-img {
+  width: 200px;
+  background-color: white;
+  padding: 0.4rem;
+}
+
+
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  color: black;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: orange;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+#form {
+  padding-top: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+input {
+  font-size: 1rem;
+}
+
+#video {
+  padding-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#products {
+  padding-top: 20vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  padding-left: 1rem;
+}
+
+button {
+  background-color: orange;
+  border: none;
+  height: 30px;
+  width: 60;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#submit {
+  background-color: orange;
+  border: none;
+  height: 25px;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+footer {
+ margin-top: 20vh;
+  background: gray;
+  justify-content: space-between;
+}
+
+ul {
+  
+  text-align: right;
+  list-style-type: none;
+  
+}
+
+iframe {
+  width: 700;
+  height: 400;
+}
+
+footer  {
+  text-align: right;
+  
+}
+
+@media only screen and (max-width: 700px) {
+  
+    h1 {
+      font-size: 2rem;
+    }
+    header {
+      position: static;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .navbar {
+      justify-content: center;
+      align-items: center;
+      margin-left: 90;
+    }
+
+    #products {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 100;
+    }
+
+    iframe {
+  width: 400;
+  height: 225;
+}
+    
+}
+
+  
+@media only screen and (max-width: 500px) {
+   #products {
+    padding: 0 150;}
+
+     iframe {
+  width: 200;
+  height: 113;
+}
+
+  .navbar {
+    margin-left: 55;
+}
+
+}
+@media only screen and (max-width: 300px) {
+  #products {
+    padding: 0 70;}
+}
