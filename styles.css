@@ -4,16 +4,13 @@
   }
 }
 
-body {
-  background: white;
-  color: #1b1b32;
-  font-family: Helvetica;
-  margin: 0 auto;
+main {
+  font-size: 1.1rem
 }
 
-header {
+#header {
   width: 100%;
-  height: 200px;
+  height: 100px;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -22,25 +19,25 @@ header {
   top: 0;
 }
 
-h1 {
-  font-size: 3.5rem;
-}
-
 #header-img {
-  width: 200px;
-  background-color: white;
-  padding: 0.4rem;
+  width: 10vw; 
 }
 
+h1 {
+  color: black;
+  ;
+  text-align: center;
+  font-size: 2.5rem;
+  
+}
 
-
-nav {
+#nav-bar {
   width: 50%;
   max-width: 300px;
   height: 50px;
 }
 
-nav > ul {
+#nav-bar > ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -50,37 +47,33 @@ nav > ul {
   height: 100%;
 }
 
-nav > ul > li {
-  color: black;
-  margin: 0 0.2rem;
-  padding: 0.2rem;
-  display: block;
-}
 
 nav > ul > li:hover {
   background-color: orange;
-  color: #1b1b32;
   cursor: pointer;
 }
 
-li > a {
+a {
   color: inherit;
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 
-
-#form {
-  padding-top: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+#products {
+  padding-top: 20vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding-left: 1rem;
 }
 
-input {
-  font-size: 1rem;
+#products > div {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10
 }
+
 
 #video {
   padding-top: 20vh;
@@ -88,14 +81,25 @@ input {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  max-width: 70vw; 
+  border-radius: 3px;
 }
 
-#products {
+iframe {
+  width: 700;
+  height: 400;
+}
+
+
+#form {
   padding-top: 20vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 4rem;
-  padding-left: 1rem;
+  text-align: center;
+}
+
+
+input {
+  font-size: 1.3rem;
+  border-radius: 3px;
 }
 
 button {
@@ -103,6 +107,7 @@ button {
   border: none;
   height: 30px;
   width: 60;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -112,7 +117,8 @@ button:hover {
 #submit {
   background-color: orange;
   border: none;
-  height: 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
 }
 
 #submit:hover {
@@ -126,68 +132,49 @@ footer {
 }
 
 ul {
-  
   text-align: right;
-  list-style-type: none;
-  
+  list-style-type: none; 
 }
 
-iframe {
-  width: 700;
-  height: 400;
-}
 
 footer  {
   text-align: right;
   
 }
 
-@media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 550px) {
   
-    h1 {
-      font-size: 2rem;
-    }
-    header {
-      position: static;
-      flex-direction: column;
-      text-align: center;
-    }
+  #products{
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  }
 
-    .navbar {
-      justify-content: center;
-      align-items: center;
-      margin-left: 90;
-    }
-
-    #products {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0 100;
-    }
-
-    iframe {
-  width: 400;
-  height: 225;
-}
-    
-}
-
+  h1 {
   
-@media only screen and (max-width: 500px) {
-   #products {
-    padding: 0 150;}
-
-     iframe {
-  width: 200;
-  height: 113;
+  font-size: 1.8rem;
 }
 
-  .navbar {
-    margin-left: 55;
+
+main {
+  font-size: 1rem
 }
 
+li > a {
+  font-size: 1rem;
 }
-@media only screen and (max-width: 300px) {
-  #products {
-    padding: 0 70;}
+
+
+
+input {
+  font-size: 1rem
+}
+#submit {
+  height: 20px;
+  font-size: 1rem;
+}
+.nav-link {
+  font-size: 1rem;
+}
+
 }
